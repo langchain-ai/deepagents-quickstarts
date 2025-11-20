@@ -53,13 +53,13 @@ LangGraph server will open a new browser window with the Studio interface, which
 You can also connect the LangGraph server to a [UI specifically designed for deepagents](https://github.com/langchain-ai/deep-agents-ui):
 
 ```bash
-$ git clone https://github.com/langchain-ai/deepagents-ui.git
-$ cd deepagents-ui
+$ git clone https://github.com/langchain-ai/deep-agents-ui.git
+$ cd deep-agents-ui
 $ yarn install
 $ yarn dev
 ```
 
-Then follow the instructions in the [deepagents-ui README](https://github.com/langchain-ai/deepagents-ui?tab=readme-ov-file#connecting-to-a-langgraph-server) to connect the UI to the running LangGraph server.
+Then follow the instructions in the [deep-agents-ui README](https://github.com/langchain-ai/deep-agents-ui?tab=readme-ov-file#connecting-to-a-langgraph-server) to connect the UI to the running LangGraph server.
 
 This provides a user-friendly chat interface and visualization of files in state. 
 
