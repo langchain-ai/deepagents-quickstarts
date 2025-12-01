@@ -20,7 +20,7 @@ uv sync
 Set your API keys in your environment:
 
 ```bash
-export ANTHROPIC_API_KEY=your_anthropic_api_key_here  # Required for Claude model - or you could use any LLM model youw ant
+export ANTHROPIC_API_KEY=your_anthropic_api_key_here  # Required for Claude model - or you could use any LLM model you want
 export TAVILY_API_KEY=your_tavily_api_key_here        # Required for web search ([get one here](https://www.tavily.com/)) with a generous free tier
 export LANGSMITH_API_KEY=your_langsmith_api_key_here  # [LangSmith API key](https://smith.langchain.com/settings) (free to sign up)
 ```
