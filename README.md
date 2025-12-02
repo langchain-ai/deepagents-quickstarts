@@ -16,6 +16,7 @@ Here are the currently supported quickstarts:
 | Quickstart Name | Location | Description | Usage Options |
 |----------------|----------|-------------|---------------|
 | [Deep Research](deep_research/README.md) | `deep_research/` | A research agent that conducts multi-step web research using Tavily for URL discovery, fetches full webpage content, and coordinates work through parallel sub-agents and strategic reflection | **Jupyter Notebook** or **LangGraph Server** |
+| [Developer](developer/README.md) | `developer/` | A software developer agent that will break down a coding task into a series of steps and execute on them, using web search via `Tavily` to help find the best tooling and practices. | **Jupyter Notebook** or **LangGraph Server** | 
 
 ## Built-In Deepagent Components
 

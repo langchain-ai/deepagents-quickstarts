@@ -1,0 +1,13 @@
+[project]
+name = "developer"
+version = "0.1.0"
+description = "Deep-research based application developer"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "deepagents>=0.2.8",
+    "langchain-anthropic>=1.2.0",
+    "markdownify>=1.2.2",
+    "python-dotenv>=1.2.1",
+    "tavily>=1.1.0",
+]
