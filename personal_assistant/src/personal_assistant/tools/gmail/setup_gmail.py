@@ -30,7 +30,7 @@ def main():
     # Check for secrets.json
     secrets_path = secrets_dir / "secrets.json"
     if not secrets_path.exists():
-        print(f"Error: Client secrets file not found at {secrets_path}")
+        print("Error: Client secrets file not found at .secrets/secrets.json")
         print("Please download your OAuth client ID JSON from Google Cloud Console")
         print("and save it as .secrets/secrets.json")
         return 1
@@ -77,7 +77,7 @@ def main():
             json.dump(token_data, token_file)
             
         print("\nAuthentication successful!")
-        print(f"Access token stored at {token_path}")
+        print("Access token securely stored.")
         return 0
     except Exception as e:
         print(f"Authentication failed: {str(e)}")

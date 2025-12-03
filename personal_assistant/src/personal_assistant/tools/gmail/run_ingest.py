@@ -86,11 +86,11 @@ def load_gmail_credentials():
             try:
                 with open(TOKEN_PATH, "r") as f:
                     token_data = json.load(f)
-                print(f"Using token from {TOKEN_PATH}")
-            except Exception as e:
-                print(f"Could not load token from {TOKEN_PATH}: {str(e)}")
+                print("Using token from local file.")
+            except Exception:
+                print("Could not load token due to an error.")
         else:
-            print(f"Token file not found at {TOKEN_PATH}")
+            print("Token file not found in secrets directory")
     
     # If we couldn't get token data from any source, return None
     if token_data is None:

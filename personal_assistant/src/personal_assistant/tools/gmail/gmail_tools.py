@@ -105,9 +105,9 @@ try:
                 try:
                     with open(token_path, "r") as f:
                         token_data = json.load(f)
-                    logger.info(f"Using token from {token_path}")
+                    logger.info("Using token from local token file in .secrets directory")
                 except Exception as e:
-                    logger.warning(f"Could not load token from {token_path}: {str(e)}")
+                    logger.warning(f"Could not load token from token file: {str(e)}")
         
         # If we couldn't get token data from any source, return None
         if token_data is None:
