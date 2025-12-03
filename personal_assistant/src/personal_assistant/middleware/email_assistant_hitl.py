@@ -519,6 +519,7 @@ class EmailAssistantHITLMiddleware(AgentMiddleware):
 
         # Format system prompt with memory
         memory_prompt = agent_system_prompt_hitl_memory.format(
+            triage_instructions=triage_prefs,
             tools_prompt=HITL_MEMORY_TOOLS_PROMPT,
             background=default_background,
             response_preferences=response_prefs,
