@@ -22,6 +22,7 @@ Set your API keys in your environment:
 ```bash
 export ANTHROPIC_API_KEY=your_anthropic_api_key_here  # Required for Claude model
 export GOOGLE_API_KEY=your_google_api_key_here        # Required for Gemini model ([get one here](https://ai.google.dev/gemini-api/docs))
+export OPENAI_API_KEY=your_open_api_key_here          # Required for OpenAI model
 export TAVILY_API_KEY=your_tavily_api_key_here        # Required for web search ([get one here](https://www.tavily.com/)) with a generous free tier
 export LANGSMITH_API_KEY=your_langsmith_api_key_here  # [LangSmith API key](https://smith.langchain.com/settings) (free to sign up)
 ```
@@ -107,4 +108,3 @@ The deep research agent adds the following custom tools beyond the built-in deep
 |-----------|-------------|
 | `tavily_search` | Web search tool that uses Tavily purely as a URL discovery engine. Performs searches using Tavily API to find relevant URLs, fetches full webpage content via HTTP with proper User-Agent headers (avoiding 403 errors), converts HTML to markdown, and returns the complete content without summarization to preserve all information for the agent's analysis. Works with both Claude and Gemini models. |
 | `think_tool` | Strategic reflection mechanism that helps the agent pause and assess progress between searches, analyze findings, identify gaps, and plan next steps. |
-
