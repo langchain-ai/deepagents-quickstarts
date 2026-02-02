@@ -1,0 +1,34 @@
+[project]
+name = "personal-assistant"
+version = "0.1.0"
+description = "Email assistant with HITL and memory using deepagents"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "deepagents",
+    "langchain-anthropic>=1.0.3",
+    "langgraph-cli[inmem]>=0.1.55",
+    "langgraph>=1.0.4",
+    "html2text>=2020.1.16",
+    "langchain>=1.1.0",
+    "rich>=10.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "jupyter>=1.0.0",
+    "ipython>=8.0.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/personal_assistant"]
+
+[tool.uv]
+dev-dependencies = [
+    "jupyter>=1.0.0",
+    "ipython>=8.0.0",
+]
